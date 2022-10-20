@@ -13,14 +13,21 @@
 
 </head>
 <body>
-    
+    <!--
+    <button type="button" onclick="showElement('about')"></button>
+    <button type="button" onclick="showElement('experience')"></button>
+    <button type="button" onclick="showElement('education')"></button>
+    <button type="button" onclick="showElement('projects')"></button>
+    <button type="button" onclick="showElement('skills')"></button>
+    -->
+
     <div class="center-align"> <!--header-->
         <nav class="container topnav">
-            <a class="active" href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
+            <a class="active" href="#about" onclick="showElement('about')">About</a>
+            <a href="#experience" onclick="showElement('experience')">Experience</a>
+            <a href="#education" onclick="showElement('education')">Education</a>
+            <a href="#projects" onclick="showElement('projects')">Projects</a>
+            <a href="#skills" onclick="showElement('skills')">Skills</a>
         </nav>
     </div>
 
@@ -31,7 +38,7 @@
             <h1>Belara Hossain Mohammad</h1>
             <h3>Web Developer</h3>
             <div class="about-img-con">
-                <img src="assets/DSC_2973-ps2.jpg" class="about-img"/>
+                <img src="assets/images/DSC_2973-ps2.jpg" class="about-img"/>
             </div>
             <br>
             <div class="social-links">
@@ -43,7 +50,7 @@
     </div>
     
 
-    <div id="about"> <!-- about--> 
+    <div id="about" class="dyn-disp"> <!-- about--> 
         
         <div class="center-align">
             <h2>About Me</h2>
@@ -53,13 +60,13 @@
             <div class="row">
                 <div class="col-md-12 box-border">
                     
-                    <p>I am ineterested in technology and eager to learn how to build designs through technology. I have core understanding of HTML and CSS. I am doing my graduation from Generation USA. Having a background in the Medical Science my strong points include problem-solving, persistence, communication skills, comfortable to work as an individual or as part of a team. I am looking for a growth in my life as a Junior Web developer.</p>
+                    <p class="description">I am ineterested in technology and eager to learn how to build designs through technology. I have core understanding of HTML and CSS. I am doing my graduation from Generation USA. Having a background in the Medical Science my strong points include problem-solving, persistence, communication skills, comfortable to work as an individual or as part of a team. I am looking for a growth in my life as a Junior Web developer.</p>
                 </div>
             </div>
         </div>     
     </div>
 
-    <div id="experience" class="container"> <!-- experience-->
+    <div id="experience" class="container dyn-disp"> <!-- experience-->
         <div class="center-align">
             <h2 class="heading">Experience</h2>
         </div>
@@ -69,8 +76,8 @@
                 <div id="experience-timeline">
                     <div data-date="July 2022 - December 2022">
                         <h3>Generation Junior Web Development Program</h3>
-                        <h5>Jul 2022 - Dec 2022</h5>
-                         <ul class="experience-description">
+                        <h5>(Jul 2022 - Dec 2022)</h5>
+                         <ul class="description">
                             <li> Participating in a 21 week, 350+ hour Junior Web Developer training program that emphasizes hands on practical application</li>
                             <li>Learning fundamentals of JavaScript and programming, developer tools, Git and problem solving</li>
                             
@@ -79,8 +86,8 @@
         
                     <div data-date="2014-2022">
                         <h3>Homeopathic Practitioner & consultant</h3>
-                        <h5>2014-2022</h5>
-                        <ul class="experience-description">
+                        <h5>(2014-2022)</h5>
+                        <ul class="description">
                             <li>experience in a public hospital has given deep exposure in patient counselling and handling</li>
                             <li>in addition to building skills in homoeopathic medicine and consultancy, worked in a team of five</li>
                             <li> as an intern I have the opportunity to work across multiple hospitals and teams</li>
@@ -93,7 +100,7 @@
 
     </div>
 
-    <div id="education"> <!-- education-->
+    <div id="education" class="dyn-disp"> <!-- education-->
         <div class="center-align">
             <h2>Education</h2>
         </div>
@@ -132,7 +139,7 @@
         </div>
 </div>
 
-<div id="projects"> <!-- projects-->
+<div id="projects" class="dyn-disp"> <!-- projects-->
     <div class="center-align">
         <h2>Projects</h2>
     </div>
@@ -141,7 +148,7 @@
             
         <div class="row">
             <div class="col-md-3">
-                <img src="assets/full_page.png" class="page-pic white-border"/>        
+                <img src="assets/images/full_page.png" class="page-pic white-border"/>        
             </div>
             <div class="col-md-9">
                 <h3>Excursion</h3>
@@ -158,7 +165,7 @@
             
         <div class="row">
             <div class="col-md-3">
-                <img src="assets/full_page (1).png" class="page-pic white-border"/>        
+                <img src="assets/images/full_page (1).png" class="page-pic white-border"/>        
             </div>
             <div class="col-md-9">
                 <h3>Mimic-Webpage</h3>
@@ -174,11 +181,13 @@
     
 </div>
 
+            
+
 <div class="container">
             
     <div class="row">
         <div class="col-md-12">
-            <div id="skills"> <!-- skills-->
+            <div id="skills" class="dyn-disp"> <!-- skills-->
                 <div class="center-align">
                     <h2>Skills</h2>
                 
@@ -198,10 +207,13 @@
         </div>
     </div>
 </div>
+
+
     
 
 
     
-    
+  <script src="/assets/js/script.js"></script>
+  
 </body>
 </html>
