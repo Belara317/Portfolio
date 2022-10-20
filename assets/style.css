@@ -14,24 +14,10 @@
     color: #dcd9d9;
     font-family: cursive;
 }
-/*.container topnav {
-    
-    line-height: 1.5;
-    color: rgb(223, 219, 219);
-  }
-  
-  
-  .topnav
-  a:link,
-  a:visited,
-  a:focus {
-    display: flex;
-    
-  }z
 
-.topnav a:hover {
-    background: rgb(222, 226, 228);
-  }*/
+.dyn-disp {
+    display: none;
+}
 
 #lead {
     
@@ -40,7 +26,7 @@
     color: rgb(16, 59, 73);
     background-color: rgb(209, 216, 146);
     border: 20px solid rgb(15, 15, 15);
-    margin: 20px ;
+    margin: 10px 60px ;
     border-radius: 20px;
     font-weight: 400;
     
@@ -49,7 +35,7 @@
 }
 
 #about {
-    font-size: 15px;
+    
     font-family:'Courier New', Courier, monospace;
     
 }
@@ -81,7 +67,7 @@
     width: 250px;
     height: 250px;
     text-align: center;
-    border: 2px solid #374054;
+    /*border: 2px solid #374054;*/
     
 }
 
@@ -102,15 +88,15 @@ h4 {
 
 
 h3 {
-    font-size: 20px;
+    font-size: 30px;
 }
 h5 {
     font-size: 15px;
     color:rgb(163, 190, 190);
 }
 
-.experience-description {
-    font-size: 15px;
+.description {
+    font-size: 20px;
     
 
 }
