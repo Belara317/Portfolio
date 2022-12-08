@@ -228,7 +228,18 @@
 
 
     
-  <script src="/assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script type="text/javascript">
+    // Get URL
+    var url = window.location.href;
+    // Get DIV
+    var msg = document.getElementById('projects');
+    // Check if URL contains the keyword
+    if( url.search( '#projects' ) > 0 ) {
+        // Display the message
+        msg.style.display = "block";
+    }
+  </script>
   
 </body>
 </html>
